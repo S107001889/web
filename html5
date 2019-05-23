@@ -1,0 +1,211 @@
+1
+
+<html>
+<body>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation</p>
+
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+0
+<input type="range" id="a" name="a" value="50">
+100 +
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b"></output>
+<br><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+-------------------
+2
+
+<html>
+<body>
+
+<h2>The multiple Attributes</h2>
+<p>The multiple attribute soecifies that user is allowed to enter more than one value in the input element</p>
+
+<form action="/action_page.php">
+ Select images:<input type="file" name="img" multiple>
+ <input type="submit">
+</form>
+
+</body>
+</html>
+
+-------------
+3
+
+<html>
+<body>
+    
+    <h2>the pattern attribute</h2>
+    <p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+    
+<form action="/action_page.php">
+     Country code:<input type="text" name="country_code" pattern="[A-za-z]{3}" title="Three letter country code">
+    <input type="submit">
+</form>
+</body>
+</html>
+
+
+-------------
+4
+
+<html>
+<head>
+    <title> The Views</title>
+    <!-- <link rel="stylesheet" href="ex-0401-style.css"> -->
+</head>
+
+<body>
+ <center>
+    <h2>HTML Image</h2>
+     <img src="12.jpg" title="the view is....." alt="The photo is gone!" width="500" height="333">
+     
+    </center>    
+    
+</body>
+</html>
+
+------------
+5
+
+<html>
+<head>
+    <style>
+        img{
+            width: 100%;            
+        }
+    </style>    
+    </head>
+    
+<body>
+    <h2>Styling Images</h2>
+    <p>The image below has the width attribute set to 128 pixels,but the stylesheet overrides it, and sets the width to 100%</p>
+    <img src="12.jpg" width="128" height="128">
+    
+    <p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+    <img src="12.jpg" style="width: 128px;height:128px">
+</body>
+</html>
+
+
+---------------
+6
+
+<html>
+<body>
+  <h2>Image maps</h2>
+    
+    <img src="workplace.jpg" alt="workplace" usemap="#workmap" width="400" height="379">
+    
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" href="a.jpg">
+    <area shape="rect" coords="290,172,333,250" href="http://www.ksu.edu.tw/">
+    <area shape="circle" coords="337,300,44" href="c.jpg">
+    </map>
+    </body>
+</html>
+
+
+-------------
+7
+
+
+<html>
+<head>
+    <style>
+        h2,p {
+            color: red;
+        }
+    </style>
+    
+    </head>
+
+<body style="background-image:url('12.jpg');">
+    
+    <h2>background</h2>
+    <p>123</p>
+    </body>
+</html>
+
+-----------------
+8
+
+<html>
+<body>
+    <h2>floating images</h2>
+    <p>
+    <img src="12.jpg" alt="smiley face" style="float:right;width:42px;height:42px;">
+    A paragraph with a floatung image on the RHS.        
+    </p>
+    
+    <p>   
+    <img src="12.jpg" alt="smiley face" style="float:left;width:42px;height:42px;">
+    A paragraph with a floatung image on the LHS.
+    </p>
+    
+    </body>
+</html>
+
+
+---------------------
+9
+
+<html>
+<body>
+
+    <h2>Background Image</h2>
+    
+    <p style="background-image:url('12.jpg')">
+    445635335434<br>  
+    445635335434<br>
+    445635335434<br>
+    445635335434<br>
+    445635335434<br>
+    445635335434<br>
+    445635335434<br>
+    445635335434<br>
+    </p>
+</body>
+</html>
+
+
+---------------
+10
+
+<html>
+<body>
+    <link rel="stylesheet" href="w20190408-1-2.css">
+<h2>Basic HTML Table</h2>
+<table style="width: 100%;color: brown;font: 20px;">
+    <tr style="color: black;font: 30px">
+    <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+    </table>
+</body>
+</html>
